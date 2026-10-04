@@ -1,0 +1,112 @@
+1. Impact of SDLC on Testing
+Sequential Models (Waterfall, V-model)
+
+Clear phases, heavy documentation, testing starts late.
+
+Example: In V-model, requirements → acceptance testing; design → system testing.
+
+Iterative/Incremental Models (Agile, DevOps)
+
+Short cycles, frequent changes, early testing (shift-left), automation-heavy.
+
+Example: In Agile, testing happens within each sprint.
+
+2. Good Practices Across All Models
+Every dev activity should have a test activity.
+
+Define objectives for each test level.
+
+Start test analysis/design early.
+
+Involve testers in reviews.
+
+Entry/exit criteria must be clear.
+
+Example: In Agile, lightweight test plans focus on product quality; in Waterfall, detailed plans focus on processes.
+
+3. Testing as a Driver
+TDD: Write failing unit test → code → refactor.
+
+BDD: Business-readable scenarios (Given/When/Then).
+
+ATDD: Acceptance criteria drive tests before coding.
+
+Example: Login feature tested with “Given user enters valid credentials, When login is attempted, Then access is granted.”
+
+4. DevOps & Testing
+CI/CD/CT: Continuous integration, delivery, and testing.
+
+Automated pipelines, regression testing, non-functional testing.
+
+Infrastructure as Code for environments.
+
+Example: Automated performance tests run after every build in CI.
+
+5. Retrospectives & Improvement
+Regular reflection meetings → continuous improvement.
+
+Benefits: team bonding, better cooperation, improved test effectiveness.
+
+Keys: blame-free, actionable improvements, follow-up.
+
+Example: Sprint retrospective identifies slow defect reporting → team agrees to use a shared dashboard.
+
+6. Test Levels
+Component/Unit Testing: Isolated modules, often automated.
+
+Integration Testing: Interfaces between components.
+
+System Testing: End-to-end, functional + non-functional.
+
+Acceptance Testing: Business/user validation.
+
+Example: Unit test checks a calculator’s “add” function; system test checks full accounting workflow.
+
+7. Functional vs Non-functional Testing
+Functional: What system does (features, security, interoperability).
+
+Non-functional: How system performs (performance, usability, reliability).
+
+Example: Functional → verify login works; Non-functional → measure login response time under load.
+
+8. Shift Left
+Move testing earlier in lifecycle.
+
+Benefits: cheaper fixes, faster feedback, reduced risk.
+
+Methods: reviews, static analysis, TDD/BDD/ATDD, CI automation.
+
+Example: Static code analysis detects vulnerabilities before coding is complete.
+
+9. Testing Approaches
+White-box: Internal structure (statement/branch/path coverage).
+
+Black-box: External behavior (equivalence partitioning, boundary value analysis).
+
+Experience-based: Tester intuition (exploratory, error guessing).
+
+Example: White-box → ensure all branches in “if-else” are tested; Black-box → test input ranges for login age field.
+
+10. Regression & Maintenance Testing
+Regression Testing: Ensures changes don’t break existing features.
+
+Maintenance Testing: Done on live systems after bug fixes, enhancements, migrations, or retirement.
+
+Types:
+
+Modification Testing → new changes.
+
+Migration Testing → moving to new environment/platform.
+
+Retirement Testing → safe decommissioning.
+
+Example: Regression test ensures “wishlist” feature doesn’t break checkout; Migration test ensures data integrity when moving to cloud.
+
+11. Impact Analysis
+Determines scope of testing after changes.
+
+Identifies regression areas.
+
+Considers direct + indirect impacts.
+
+Example: Changing payment gateway triggers regression tests for checkout, refunds, and order history.
