@@ -1,0 +1,94 @@
+Static Testing in Software Development
+1. Definition & Purpose
+Static testing = examining code, requirements, or design without executing the program.
+
+Goal: detect defects early → reduce cost, improve quality.
+
+Examples: reviews, walkthroughs, inspections, static analysis tools.
+
+2. Code Static Analysis
+Checks performed by tools:
+
+Coding standard violations → e.g., naming conventions not followed.
+
+Security vulnerabilities → e.g., SQL injection risks.
+
+Unreachable code → dead code blocks.
+
+Variables used without initialization → runtime errors avoided.
+
+Memory leaks → improper resource handling.
+
+Poor code structure/complexity → maintainability issues.
+
+Nature: Automated, tool-based, no execution required.
+
+3. Characteristics of Static Testing
+Can be applied to non-executable artifacts (requirements, design docs).
+
+Reveals potential issues that could become defects.
+
+Identifies defects directly without execution.
+
+MCQ Example: Correct combination → A, C, D.
+
+4. Types of Static Reviews
+Informal Review: Quick, unstructured, e.g., peer read-through.
+
+Walkthrough: Author explains work product to stakeholders for feedback.
+
+Technical Review: Structured, experts check against standards/specs.
+
+Inspection: Most formal, defined roles (moderator, reader, recorder, inspector), entry/exit criteria, defect-focused.
+
+Example: Financial services blueprint → Walkthrough is most appropriate.
+
+5. Formal Review Process
+Planning: Define scope, participants, roles, entry/exit criteria.
+
+Initiation: Distribute materials, explain objectives.
+
+Individual Review: Participants examine independently, prepare issues/questions.
+
+Issue Communication & Analysis: Meeting to discuss/document findings.
+
+Fixing & Reporting: Assign fixes, track progress, report outcomes.
+
+MCQ Example: Correct statement → B. ISO/IEC/IEEE 29119-3 describes review techniques.
+
+6. Review Roles
+Author: Creates work product.
+
+Moderator/Facilitator: Leads process, mediates.
+
+Reviewer: Examines product, identifies issues.
+
+Scribe/Recorder: Documents findings and decisions.
+
+Manager: Provides resources, ensures objectives met.
+
+MCQ Example: Manager’s responsibility → B. Ensuring sufficient time available.
+
+7. Success Factors for Reviews
+Clear objectives.
+
+Right review type chosen.
+
+Adequate preparation time.
+
+Management support.
+
+Proper issue tracking & metrics collection.
+
+Training for participants.
+
+Culture of learning & improvement.
+
+8. Static vs Dynamic Testing
+Static Testing	 | Dynamic Testing
+No execution	| Requires execution
+Applies to docs/code	| Applies to executable code
+Finds defects directly	| Shows failures caused by defects
+Early lifecycle	Runtime
+Highlights structure/style issues	Shows actual behavior
+Examples: reviews, inspections	Examples: functional, performance testing
